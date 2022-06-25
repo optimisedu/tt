@@ -1,0 +1,18 @@
+.logo svg {
+  height: 40px;
+}
+
+.navigation {
+  float: right;
+}
+
+.teaser:before, .teaser:after {
+  content: " ";
+  display: table;
+}
+.teaser:after {
+  clear: both;
+}
+.teaser li {
+  float: left;
+}

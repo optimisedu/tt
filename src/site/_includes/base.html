@@ -1,3 +1,7 @@
+---
+title: The web, design, and accessibility
+layout: base.html
+---
 <!doctype html>
 <html lang="en"
     domain="{{ metadata.domain }}"
@@ -43,7 +47,7 @@
     <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
 
     <link rel="preconnect" href="/" crossorigin>
-    <link rel="preload" href="/fonts/Inter-3.19.var.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../../fonts/Inter-3.19.var.woff2" as="font" type="font/woff2" crossorigin>
     <script async defer src="{{ "/js/min.js" | addHash }}"
       {% if webvitals %}data-cwv-src="{{ "/js/web-vitals.js" | addHash }}"{% endif %}>
     </script>

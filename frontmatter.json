@@ -1,0 +1,10 @@
+{
+  "$schema": "https://frontmatter.codes/frontmatter.schema.json",
+  "frontMatter.content.pageFolders": [
+    {
+      "title": "SEO Shorts",
+      "path": "[[workspace]]/SEO Shorts"
+    }
+  ],
+  "frontMatter.framework.id": "11ty"
+}

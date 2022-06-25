@@ -4,15 +4,14 @@
     <body>
         <div class="wrapper">
             <a href="#main" tabindex="0" class="skip-to-content">Skip to main content</a>
-            {% include "./_includes/header.html" %}
+            {% include "../header.html" %}
             <main id="main">
                 {{ content | safe }}
                 {% if cta %}
                     {% include "call-to-action.html" %}
                 {% endif %}
             </main>
-            {# {% include "./_includes/footer.html" %} #}
-            <footer>
+            {% include "../footer.html" %}
             <script>{% include "scripts.js" %}</script>
             <style>
               @supports (color-scheme: dark light) {
@@ -22,7 +21,6 @@
                 }
               }
             </style>
-            </footer>
         </div>
     </body>
 </html>

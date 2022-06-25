@@ -1,14 +1,21 @@
-head>
+---
+title: Optimise-u
+heading: Optimise-u
+layout: base.html
+company: Optimise-u
+url: https://optimise-u.com
+---
+<head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta charset="utf-8" />
     {%- if title %}
-        {%- set pageTitle = title | smart | safe %}
+        {%- set pageTitle = title | safe %}
     {%- elif category %}
-        {%- set pageTitle = category | smart | safe %}
+        {%- set pageTitle = category | safe %}
     {%- else %}
-        {%- set pageTitle = heading | smart | safe %}
+        {%- set pageTitle = heading | safe %}
     {%- endif %}
-    <title>{{ pageTitle }} – tempertemper</title>
+    <title>{{ pageTitle }} – Optimise-u</title>
     {%- if description %}
         {%- set description = description | smart | safe %}
     {%- elif intro %}
@@ -86,7 +93,6 @@ head>
     <meta name="disabled-adaptations" content="watch" />
     <meta name="format-detection" content="telephone=no" />
     <meta name="color-scheme" content="dark light" />
-
     <link rel="canonical" href="{{ site.url }}{{ page.url | replace('.html', '') }}" />
     {# {%- if site.env == 'development' %}
         <link rel="icon" href="/favicon--dev.ico" />
@@ -100,9 +106,7 @@ head>
     <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#262626" media="(prefers-color-scheme: dark)" />
     <!--[if lte IE 9]><script src="/assets/js/html5shiv.min.js"></script><![endif]-->
-    <link rel="preload" href="/assets/fonts/FSMeWeb-Regular.woff2" as="font" type="font/woff2" crossorigin />
-    <link rel="preload" href="/assets/fonts/FSMeWeb-Bold.woff2" as="font" type="font/woff2" crossorigin />
-    <link rel="preload" href="/assets/fonts/FSMeWeb-Italic.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/../Inter-3.19.var.woff2" as="font" type="font/woff2" crossorigin />
     {%- set css %}{%- include "critical.css" %}{% endset %}
     <style>{{- css | safe | replace("", "") -}}</style>
     <link rel="preload" href="/assets/css/non-critical.css?v={{ site.version }}" as="style" onload="this.onload=null;this.rel='stylesheet'" />

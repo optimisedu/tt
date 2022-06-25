@@ -1,5 +1,23 @@
 //ONE HELL OF AN ELEVENTY CONFIG. CALLOUT TO TEMPER TEMPER AND GOOGLE FOR THE FILTERS IN THE _11TY FOLDER.
-
+const { DateTime } = require("luxon");
+const { promisify } = require("util");
+const fs = require("fs");
+const path = require("path");
+const hasha = require("hasha");
+const touch = require("touch");
+const readFile = promisify(fs.readFile);
+const readdir = promisify(fs.readdir);
+const stat = promisify(fs.stat);
+const execFile = promisify(require("child_process").execFile);
+const pluginRss = require("@11ty/eleventy-plugin-rss");
+const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const pluginNavigation = require("@11ty/eleventy-navigation");
+const markdownIt = require("markdown-it");
+const markdownItAnchor = require("markdown-it-anchor");
+const localImages = require("eleventy-plugin-local-images");
+const CleanCSS = require("clean-css");
+// const GA_ID = require(".src/site/_data/metadata.json").googleAnalyticsId;
+const embeds = require("eleventy-plugin-embed-everything");
 module.exports = eleventyConfig => {
     eleventyConfig.setUseGitIgnore(false);
 
@@ -40,7 +58,6 @@ module.exports = eleventyConfig => {
 eleventyConfig.addPlugin(require("./_11ty/img-dim.js"));
   eleventyConfig.addPlugin(require("./_11ty/json-ld.js"));
   eleventyConfig.addPlugin(require("./_11ty/optimize-html.js"));
-    eleventyConfig.addPlugin(require("./_11ty/apply-csp.js"));
     // We need to rebuild on CSS change to inline it.
       eleventyConfig.addWatchTarget("./js/");
     eleventyConfig.addWatchTarget("./css/");

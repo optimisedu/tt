@@ -6,6 +6,7 @@
   "genre": "Marketing",
   "googleAnalyticsId": "GA ID. Update me. Note, that this is not compatible with the not-yet-commonly used version 4 of Google Analytics",
   "sendWebVitals": false,
+  "template": "./_includes/base.html",
   "feed": {
     "subtitle": "Subtitle. Update me.",
     "filename": "feed.xml",

@@ -1,0 +1,25 @@
+{
+  "title": "Optimise-U | Simple Search Solutions.",
+  "url": "https://optimise-u.co.uk",
+  "domain": "optimise-u.co.uk",
+  "description": "Clean web design to skyrocket your Google Rank.",
+  "genre": "Marketing",
+  "googleAnalyticsId": "GA ID. Update me. Note, that this is not compatible with the not-yet-commonly used version 4 of Google Analytics",
+  "sendWebVitals": false,
+  "feed": {
+    "subtitle": "Subtitle. Update me.",
+    "filename": "feed.xml",
+    "path": "/feed.xml",
+    "id": "https://optimise-u.co.uk"
+  },
+  "jsonfeed": {
+    "path": "/feed/feed.json",
+    "url": "https://update-me.com/feed/feed.json"
+  },
+  "author": {
+    "name": "Ⓒ David Arnold - https://www.optimise-u.co.uk",
+    "twitterHandle": "Optimizu"
+  },
+  "publisher": {
+    "name": "David Arnold"}
+  }

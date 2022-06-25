@@ -1,0 +1,17 @@
+<footer class="footer">
+    <div class="social">
+        <a href="{{ site.author.twitter | twitterLink }}">
+            {%- set footer = true -%}
+            {%- include "svg/twitter.svg" -%}
+            {{ site.author.twitter }}
+        </a>
+    </div>
+    <nav aria-label="secondary">
+        {% include "sec-nav.html" %}
+    </nav>
+    <div class="copyright">
+        <p>
+            &copy; {{ site.author.name }} {{ site.time | date: "Y" }}
+        </p>
+    </ul>
+</footer>

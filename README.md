@@ -1,3 +1,4 @@
 ## Premise:
 This was an experiment to gain a deeper understanding of how eleventy works - after making some basic starters, I decided to merge two more complex starters.
-Shout out to tempertemper.net - Visit and learn - and the Google "high performance eleventy starter" which is excelent but starting to get dated.
+Shout out to tempertemper.net - Visit and learn - and the Google "high performance eleventy starter" which is excelent but starting to get dated. This is an
+experiment in accessability, minification, and remembering not to use powershell
